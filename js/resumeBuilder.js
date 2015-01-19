@@ -1,1 +1,1 @@
-$("#main").append(Thomas Elliott);
+$("#header").append(Thomas Elliott);
