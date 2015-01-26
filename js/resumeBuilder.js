@@ -49,10 +49,10 @@ var formattedBlog = HTMLblog.replace("%data%", blog);
 var bio = {
   "name" : formattedName,
   "role" : formattedRole,
-  "contact" : contactSkype,
-  "blog" : blog,
-  "picture" : pic,
-  "welcome" : welcome,
+  "contact" : formattedContact,
+  "blog" : formattedBlog,
+  "picture" : formattedPic,
+  "welcome" : formattedWelcome,
   "skills" : skills
 };
 
