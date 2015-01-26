@@ -45,6 +45,7 @@ var formattedContact = HTMLcontactGeneric.replace("%data%", contactSkype);
 var formattedPic = HTMLbioPic.replace("%data%", pic);
 var formattedWelcome = HTMLWelcomeMsg.replace("%data%", welcome);
 var formattedBlog = HTMLblog.replace("%data%", blog);
+var formattedSkills = HTMLskills.replace("%data%", skills);
 
 var bio = {
   "name" : formattedName,
@@ -53,11 +54,14 @@ var bio = {
   "blog" : formattedBlog,
   "picture" : formattedPic,
   "welcome" : formattedWelcome,
-  "skills" : skills
+  "skills" : formattedSkills
 };
 
 $("#header").prepend(bio.name);
 $("#header").prepend(bio.role);
-$("#topContacts").prepend(bio.contact);
-$("#topContacts").prepend(bio.blog);
-$("#topContacts").prepend(bio.welcome);
+$("#header").prepend(bio.picture);
+$("#topContacts").append(bio.contact);
+$("#topContacts").append(bio.blog);
+$("#topContacts").append(bio.welcome);
+$("#header").append(HTMLskillsStart);
+$("#skills").append(bio.skills);
