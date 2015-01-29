@@ -1,3 +1,4 @@
+/*
 //$("#main").append("Thomas Elliott");
 
 //variables
@@ -47,15 +48,7 @@ var formattedWelcome = HTMLWelcomeMsg.replace("%data%", welcome);
 var formattedBlog = HTMLblog.replace("%data%", blog);
 var formattedSkills = HTMLskills.replace("%data%", skills);
 
-var bio = {
-  "name" : formattedName,
-  "role" : formattedRole,
-  "contact" : formattedContact,
-  "blog" : formattedBlog,
-  "picture" : formattedPic,
-  "welcome" : formattedWelcome,
-  "skills" : formattedSkills
-};
+
 
 $("#header").prepend(bio.name);
 $("#header").prepend(bio.role);
@@ -66,7 +59,7 @@ $("#topContacts").append(bio.welcome);
 $("#header").append(HTMLskillsStart);
 $("#skills").append(bio.skills);
 
-// dot and bracket notation
+/*dot and bracket notation
 var work = {
   "position":"Communications Specialist"
 };
@@ -74,7 +67,7 @@ work.employer = "EPS,LLC";
 work.years = 5;
 work.city = "Ifakara, Tanzania";
 
-/* var education = {
+ var education = {
   "school": "Northwestern University"
 };
 education["years"]=1.5;
@@ -84,7 +77,7 @@ education["city"]= "Evanston, Illinois";
 $("#header").append(work["position"]);
 $("#header").append(education.school);
 
-
+*/
 // JSON object
 var education = {
   "schools": [
@@ -167,4 +160,20 @@ var projects = {
       ]
     }
   ]
+};
+
+var bio = {
+  "name" : "Thomas Elliott",
+  "role" : "Communications Specialist",
+  "welcomeMessage" : "Welcome to the resume",
+  "contact" :
+    [
+  {"mobile": 3173400877,
+    "email": "tj@tjelliott.com",
+    "github" : "ElCuffigno",
+    "twitter" : "TJElliott",
+    "Location" : "Kibaoni, Tanzania",
+  }
+    ],
+  "skills" : ["Awesomeness", "Handsomeness", "Communications"]
 };
