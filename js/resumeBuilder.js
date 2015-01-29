@@ -102,8 +102,7 @@ var education = {
     "major": "Journalism",
     "grad" : 2009
   }
-  ]
-,
+],
  "onlineCourses": [
  {
    "title" : "Front End JavaScript",
@@ -114,4 +113,32 @@ var education = {
    "URL" : "http://udacity.com"
  }
  ]
+};
+
+//Final JSON objects
+var work = {
+  "jobs": [
+{
+  "employer": "EPS",
+  "title": "Communications Specialist",
+  "location": "South Bend, Indiana",
+  "dates" : "2009-2012, 2014-2015",
+  "description" : "Managed online marketing for Engineering Firm."
+
+},
+{
+  "employer": "MSABI",
+  "title": "Communications and IT Manager",
+  "location": "Ifakara, Morogoro Region, Tanzania",
+  "dates" : "2014-2015",
+  "description" : "Established office server and managed online marketing for WASH NGO."
+},
+{
+  "employer": "Claretian Publications/St. Jude League",
+  "title": "Editorial Production Assistant",
+  "location": "Chicago, Illinois",
+  "dates" : "2010-2014",
+  "description" : "Wrote, edited, and facilitated production of driect mail campaigns"
 }
+  ]
+};
