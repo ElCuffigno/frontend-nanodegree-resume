@@ -97,6 +97,15 @@ var bio = {
   "bioPic" : "http://www.teamcelliott.com/wp-content/uploads/2014/12/flyingbirdhead.jpg"
 };
 
+//Add header stuff back.
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+var formattedPic = HTMLbioPic.replace("%data%", bio.bioPic);
+
+$("#header").prepend(formattedName);
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedPic);
+
 //if statement quiz lesson 2.1
 if (bio.skills.length > 0) {
 
