@@ -52,7 +52,7 @@ var work = {
   "location": "Chicago, Illinois",
   "dates" : "2010-2014",
   "description" : "Wrote, edited, and facilitated production of driect mail campaigns"
-}
+    }
   ]
 };
 
@@ -91,7 +91,7 @@ var bio = {
     "email": "tj@tjelliott.com",
     "github" : "ElCuffigno",
     "twitter" : "TJElliott",
-    "Location" : "Kibaoni, Tanzania",
+    "Location" : "Kibaoni, Tanzania"
   },
   "skills" : ["Awesomeness", "Handsomeness", "Communications"],
   "bioPic" : "http://www.teamcelliott.com/wp-content/uploads/2014/12/flyingbirdhead.jpg"
@@ -111,12 +111,12 @@ if (bio.skills.length > 0) {
 
   $("#header").append(HTMLskillsStart);
 
-  var formattedSkills = HTMLSkills.replace("%data%", bio.skills[0]);
-  $("#skils").append(formattedSkills);
-  formattedSkills = HTMLSkills.replace("%data%", bio.skills[1]);
-  $("#skils").append(formattedSkills);
-  formattedSkills = HTMLSkills.replace("%data%", bio.skills[2]);
-  $("#skils").append(formattedSkills);
+  var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
+  $("#skils").append(formattedSkill);
+  formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
+  $("#skils").append(formattedSkill);
+  formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
+  $("#skils").append(formattedSkill);
 }
 
 //for in loops (and loops in general)
