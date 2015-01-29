@@ -65,3 +65,20 @@ $("#topContacts").append(bio.blog);
 $("#topContacts").append(bio.welcome);
 $("#header").append(HTMLskillsStart);
 $("#skills").append(bio.skills);
+
+// dot and bracket notation
+var work = {
+  "position":"Communications Specialist"
+};
+work.employer = "EPS,LLC";
+work.years = 5;
+work.city = "Ifakara, Tanzania";
+
+var education = {
+  "school": "Northwestern University"
+};
+education["years"]=1.5;
+education["city"]= "Evanston, Illinois";
+
+$("#header").append(work["position"]);
+$("#header").append(education.school);
