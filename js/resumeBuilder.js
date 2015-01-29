@@ -109,3 +109,13 @@ if (bio.skills.length > 0) {
   formattedSkills = HTMLSkills.replace("%data%", bio.skills[2]);
   $("#skils").append(formattedSkills);
 }
+
+//for in loops (and loops in general)
+for (jobs in work) {
+  $("#workExperience").append(HTMLworkStart);
+  var formattedEmployer = HTMLworkEmployer.replace("%data%", work[jobs.employer]);
+  var formattedTitle = HTMLworkTitle.replace("%data%", work[jobs.title]);
+$(".work-entry:last").append(formattedEmployer);
+$(".work-entry:last").append(formattedTitle);
+
+};
