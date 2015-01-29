@@ -142,3 +142,29 @@ var work = {
 }
   ]
 };
+
+//projects object
+var projects = {
+  "projects": [
+{
+  "title": "Personal Blog",
+  "dates" : "2014-present",
+  "description" : "Blogged about life in Kibaoni, Tanzania.",
+  "images": [
+    "http://www.teamcelliott.com/wp-content/uploads/2015/01/HotSauceList-1024x576.jpg",
+    "http://www.teamcelliott.com/wp-content/uploads/2015/01/20150102_132438-1024x576.jpg",
+    "http://www.teamcelliott.com/wp-content/uploads/2014/12/2014-12-15-14.04.26-1024x576.jpg",
+  ]
+},
+{
+  "title": "Personal Blog 2 ",
+  "dates" : "2014-present",
+  "description" : "Blogged about life in Kibaoni, Tanzania.",
+  "images": [
+  "http://www.teamcelliott.com/wp-content/uploads/2015/01/HotSauceList-1024x576.jpg",
+  "http://www.teamcelliott.com/wp-content/uploads/2015/01/20150102_132438-1024x576.jpg",
+  "http://www.teamcelliott.com/wp-content/uploads/2014/12/2014-12-15-14.04.26-1024x576.jpg",
+      ]
+    }
+  ]
+};
