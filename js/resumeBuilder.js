@@ -74,11 +74,44 @@ work.employer = "EPS,LLC";
 work.years = 5;
 work.city = "Ifakara, Tanzania";
 
-var education = {
+/* var education = {
   "school": "Northwestern University"
 };
 education["years"]=1.5;
 education["city"]= "Evanston, Illinois";
+*/
 
 $("#header").append(work["position"]);
 $("#header").append(education.school);
+
+
+// JSON object
+var education = {
+  "schools": [
+  {
+    "name": "Wabash College",
+    "city": "Crawfordsville, Indiana",
+    "degree": "Bachelor of Arts",
+    "major": ["English", "Religion"],
+    "grad" : 2008
+  },
+  {
+    "name": "Northwestern University",
+    "city": "Evanston, Illinois",
+    "degree": "Master of Science",
+    "major": "Journalism",
+    "grad" : 2009
+  }
+  ]
+,
+ "onlineCourses": [
+ {
+   "title" : "Front End JavaScript",
+   "URL" : "http://udacity.com"
+ },
+ {
+   "title" : "Front End HTML",
+   "URL" : "http://udacity.com"
+ }
+ ]
+}
