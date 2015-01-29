@@ -72,7 +72,6 @@ work.city = "Ifakara, Tanzania";
 };
 education["years"]=1.5;
 education["city"]= "Evanston, Illinois";
-*/
 
 $("#header").append(work["position"]);
 $("#header").append(education.school);
@@ -167,13 +166,12 @@ var bio = {
   "role" : "Communications Specialist",
   "welcomeMessage" : "Welcome to the resume",
   "contact" :
-    [
   {"mobile": 3173400877,
     "email": "tj@tjelliott.com",
     "github" : "ElCuffigno",
     "twitter" : "TJElliott",
     "Location" : "Kibaoni, Tanzania",
-  }
-    ],
-  "skills" : ["Awesomeness", "Handsomeness", "Communications"]
+  },
+  "skills" : ["Awesomeness", "Handsomeness", "Communications"],
+  "bioPic" : "http://www.teamcelliott.com/wp-content/uploads/2014/12/flyingbirdhead.jpg"
 };
