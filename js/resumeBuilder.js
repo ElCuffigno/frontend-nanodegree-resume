@@ -119,7 +119,8 @@ if (bio.skills.length > 0) {
   $("#skils").append(formattedSkill);
 }
 
-//for in loops (and loops in general)
+//for in loops (and loops in general) and added function
+function displayWork (){
 for (job in work.jobs) {
   $("#workExperience").append(HTMLworkStart);
 
@@ -133,3 +134,6 @@ for (job in work.jobs) {
 $(".work-entry:last").append(formattedEmployer);
 
 }
+}
+
+displayWork();
