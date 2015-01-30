@@ -125,8 +125,11 @@ for (job in work.jobs) {
 
   var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
   var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-  var formattedEmployerTitle = formattedEmployer + formattedTitle;
+  var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+  var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+  var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+  var formattedEmployer = formattedEmployer + formattedTitle + formattedLocation + formattedDates + formattedDescription;
 
-$(".work-entry:last").append(formattedEmployerTitle);
+$(".work-entry:last").append(formattedEmployer);
 
 }
