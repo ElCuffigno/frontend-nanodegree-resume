@@ -137,3 +137,11 @@ $(".work-entry:last").append(formattedEmployer);
 }
 
 displayWork();
+
+// Sample function, solved, looks for clicks on events. 
+$(document).click(function(loc) {
+  var x = loc.pageX;
+  var y = loc.pageY;
+
+  logClicks(x,y);
+});
