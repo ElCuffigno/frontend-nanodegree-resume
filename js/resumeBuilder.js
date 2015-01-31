@@ -12,7 +12,7 @@ var education = {
     "school": "Northwestern University",
     "location": "Evanston, Illinois",
     "degree": "Master of Science",
-    "major": "Journalism",
+    "major": ["Journalism", "Digital Storytelling"],
     "grad" : 2009
   }
 ],
@@ -186,5 +186,30 @@ projects.display = function() {
 }
 projects.display();
 
+//Add education
+education.display = function () {
+  for (school in education.schools){
+    $("#education").append(HTMLschoolStart);
+
+    var formattedName = HTMLschoolName.replace("%data%", education.schools[school].school);
+    $(".education-entry:last").append(formattedName);
+    var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+    $(".education-entry:last").append(formattedDegree);
+    var formDates = HTMLschoolDates.replace("%data%", education.schools[school].grad);
+    $(".education-entry:last").append(formDates);
+    var formLoc = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+    $(".education-entry:last").append(formLoc);
+
+  if (education.schools[school].major.length >0) {
+    for (major in education.schools[school].major) {
+      var formMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major[major]);
+      $(".education-entry:last").append(formMajor);
+      }
+    }
+  }
+
+};
+
+education.display();
 //add a map
 $("#mapDiv").append(googleMap);
