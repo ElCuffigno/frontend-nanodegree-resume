@@ -138,10 +138,23 @@ $(".work-entry:last").append(formattedEmployer);
 
 displayWork();
 
-// Sample function, solved, looks for clicks on events. 
+// Sample function, solved, looks for clicks on events.
 $(document).click(function(loc) {
   var x = loc.pageX;
   var y = loc.pageY;
 
   logClicks(x,y);
 });
+
+// Internationalized Name function
+
+
+function inName(name) {
+  var nameTwo = name.split(" ");
+  var lastName = nameTwo[1].toUpperCase();
+  var firstName = nameTwo[0];
+
+  return firstName + " " + lastName;
+}
+
+$("#main").append(internationalizeButton);
