@@ -120,10 +120,12 @@ for (skill in bio.skills) {
 }
 
 //Add contact info
+var info = new RegExp("%data%", 'g');
+
 var formMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 var formEmail = HTMLemail.replace("%data%", bio.contacts.email);
-var formTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-var formGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+var formTwitter = HTMLtwitter.replace(info, bio.contacts.twitter);
+var formGithub = HTMLgithub.replace(info, bio.contacts.github);
 
 $("#footerContacts").append(formMobile);
 $("#footerContacts").append(formEmail);
