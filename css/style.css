@@ -110,14 +110,13 @@ a {
 
 .white-text a{
   font-weight: bold;
-  color: #FFFFFF;  
+  color: #FFFFFF;
 }
 
 .white-text a:hover{
   color: #1199C3;
   text-decoration: none;
   margin-top: 10px;
-  display: block;
 }
 
 .gray {

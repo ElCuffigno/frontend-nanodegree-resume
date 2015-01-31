@@ -103,9 +103,10 @@ var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 var formattedPic = HTMLbioPic.replace("%data%", bio.bioPic);
 
-$("#header").prepend(formattedName);
+
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedPic);
+$("#header").prepend(formattedName);
 
 
 
