@@ -2,15 +2,15 @@
 var education = {
   "schools": [
   {
-    "name": "Wabash College",
-    "city": "Crawfordsville, Indiana",
+    "school": "Wabash College",
+    "location": "Crawfordsville, Indiana",
     "degree": "Bachelor of Arts",
     "major": ["English", "Religion"],
     "grad" : 2008
   },
   {
-    "name": "Northwestern University",
-    "city": "Evanston, Illinois",
+    "school": "Northwestern University",
+    "location": "Evanston, Illinois",
     "degree": "Master of Science",
     "major": "Journalism",
     "grad" : 2009
@@ -42,7 +42,7 @@ var work = {
 {
   "employer": "MSABI",
   "title": "Communications and IT Manager",
-  "location": "Ifakara, Morogoro Region, Tanzania",
+  "location": "Ifakara,Tanzania",
   "dates" : "2014-2015",
   "description" : "Established office server and managed online marketing for WASH NGO."
 },
@@ -86,12 +86,12 @@ var bio = {
   "name" : "Thomas Elliott",
   "role" : "Communications Specialist",
   "welcomeMessage" : "Welcome to the resume",
-  "contact" :
+  "contacts" :
   {"mobile": 3173400877,
     "email": "tj@tjelliott.com",
     "github" : "ElCuffigno",
     "twitter" : "TJElliott",
-    "Location" : "Kibaoni, Tanzania"
+    "location" : "Ifakara, Tanzania"
   },
   "skills" : ["Awesomeness", "Handsomeness", "Communications"],
   "bioPic" : "http://www.teamcelliott.com/wp-content/uploads/2014/12/flyingbirdhead.jpg"
@@ -185,3 +185,6 @@ projects.display = function() {
   }
 }
 projects.display();
+
+//add a map
+$("#mapDiv").append(googleMap);
