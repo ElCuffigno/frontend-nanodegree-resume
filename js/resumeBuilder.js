@@ -159,3 +159,28 @@ function inName(name) {
 }
 
 $("#main").append(internationalizeButton);
+
+// encapsulation and everything is objects
+
+projects.display = function() {
+  for (project in projects.projects) {
+    $("#projects").append(HTMLprojectStart);
+
+    var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+    var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
+    var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+
+    for (image in projects.project[project]) {
+      var formattedImage1 = HTMLprojectImage.replace("%data%", projects.projects[project].images[0]);
+      var formattedImage2 = HTMLprojectImage.replace("%data%", projects.projects[project].images[1]);
+      var formattedImage3 = HTMLprojectImage.replace("%data%", projects.projects[project].images[2]);
+    }
+
+
+    var formattedProject = formattedTitle + formattedDates + formattedDescription + formattedImage1 + formattedImage2 +formattedImage3;
+
+    $(".project-entry:last").append(formattedProject);
+
+  }
+}
+projects.display();
