@@ -170,16 +170,17 @@ projects.display = function() {
     var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
     var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
 
-    for (image in projects.project[project]) {
-      var formattedImage1 = HTMLprojectImage.replace("%data%", projects.projects[project].images[0]);
-      var formattedImage2 = HTMLprojectImage.replace("%data%", projects.projects[project].images[1]);
-      var formattedImage3 = HTMLprojectImage.replace("%data%", projects.projects[project].images[2]);
-    }
-
-
-    var formattedProject = formattedTitle + formattedDates + formattedDescription + formattedImage1 + formattedImage2 +formattedImage3;
+    var formattedProject = formattedTitle + formattedDates + formattedDescription;
 
     $(".project-entry:last").append(formattedProject);
+
+    if (projects.projects[project].images.length > 0) {
+      for (image in projects.projects[project].images) {
+      var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+      $(".project-entry:last").append(formattedImage);
+    }
+  }
+
 
   }
 }
