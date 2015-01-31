@@ -91,6 +91,7 @@ var bio = {
     "email": "tj@tjelliott.com",
     "github" : "ElCuffigno",
     "twitter" : "TJElliott",
+    "blog" : "http://www.teamcelliott.com",
     "location" : "Ifakara, Tanzania"
   },
   "skills" : ["Awesomeness", "Handsomeness", "Communications"],
@@ -118,6 +119,21 @@ for (skill in bio.skills) {
 }
 }
 
+//Add contact info
+var formMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+var formEmail = HTMLemail.replace("%data%", bio.contacts.email);
+var formTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+var formGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+
+$("#footerContacts").append(formMobile);
+$("#footerContacts").append(formEmail);
+$("#footerContacts").append(formTwitter);
+$("#footerContacts").append(formGithub);
+
+$("#topContacts").append(formMobile);
+$("#topContacts").append(formEmail);
+$("#topContacts").append(formTwitter);
+$("#topContacts").append(formGithub);
 
 
 //for in loops (and loops in general) and added function
@@ -149,7 +165,7 @@ $(document).click(function(loc) {
 
 // Internationalized Name function
 
-
+/*
 function inName(name) {
   name = name.trim().split(" ");
   console.log(name);
@@ -160,7 +176,7 @@ function inName(name) {
 }
 
 $("#main").append(internationalizeButton);
-
+*/
 // encapsulation and everything is objects
 
 projects.display = function() {
