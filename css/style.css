@@ -13,6 +13,10 @@
   padding-right: 5%;
 }
 
+.project-entry img {
+  max-width: 30%
+}
+
 h1 {
   font-size: 40px;
   color: #F5A623;
@@ -192,6 +196,10 @@ span {
   .welcome-message {
     display: none;
   }
+
+  .project-entry img {
+    max-width: 100%
+  }
 }
 
 #map {
@@ -206,6 +214,8 @@ span {
   width: 100%;
   padding-bottom: 5%;
 }
+
+
 
 @media only screen and (min-width: 750px) {
   #skillsH3,
